@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinUdemy.MainPage">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BlueColor">#1e90ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout Margin="15" VerticalOptions="Center">
         <Entry Placeholder="Email" Keyboard="Email" x:Name="emailEntry"/>
         <Entry Placeholder="Password" IsPassword="True" x:Name="passwordEntry"/>
